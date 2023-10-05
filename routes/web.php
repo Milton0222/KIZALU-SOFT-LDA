@@ -16,7 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
+Route::ge('/ver', function(){
+    dd('ola kizalu');
+});
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
