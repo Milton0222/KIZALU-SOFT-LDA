@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::ge('/ver', function(){
+Route::get('/ver', function(){
     dd('ola kizalu');
 });
 Route::middleware([
