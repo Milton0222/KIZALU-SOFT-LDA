@@ -21,7 +21,7 @@
             <ul>
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#About">Sobre</a></li>
-                <li><a href="#Menu">Servicos</a></li> 
+                <li><a href="#servico">Servicos</a></li> 
           
                 <li><a href="#contacto">Contacto</a></li>
 
@@ -74,7 +74,7 @@
             </div>
 
             <div class="about_text">
-                <h1><span>Sobre Nós</span></h1>
+                <h1 ><span class="h1">Sobre Nós</span></h1>
                 <h3>Porquê Nós Escolher?</h3>
                 <p>
                     Contamos com uma equipe altamente qualificada e experiente em todas as fases do ciclo de vida do
@@ -101,9 +101,9 @@
 <br>
 
     <!--Servicos -->
-<section id="Menu">
+<section id="servico">
     <div class="servico reveal" >
-        <h2><span>Nossos Serviços</span></h2>
+        <h1><span>Nossos Serviços</span></h1>
 
 
         <div class="servico_box">
@@ -114,7 +114,7 @@
 
                 
                 <div class="servico_info">
-                   <h1> Desenvolvimento de Software</h1>
+                   <h2> Desenvolvimento de Software</h2>
                    <p>Desenvolvemos softwares personalizados que atendem 
                     precisamente aos requisitos exclusivos de cada cliente.
                     Isso inclui desde aplicações web até sistemas 
@@ -132,7 +132,7 @@
 
                 
                 <div class="servico_info">
-                   <h1> Desenvolvimento de Software</h1>
+                <h2> Desenvolvimento de Software</h2>
                    <p>Desenvolvemos softwares personalizados que atendem 
                     precisamente aos requisitos exclusivos de cada cliente.
                     Isso inclui desde aplicações web até sistemas 
@@ -150,7 +150,7 @@
 
                 
                 <div class="servico_info">
-                   <h1> Desenvolvimento de Software</h1>
+                <h2> Desenvolvimento de Software</h2>
                    <p>Desenvolvemos softwares personalizados que atendem 
                     precisamente aos requisitos exclusivos de cada cliente.
                     Isso inclui desde aplicações web até sistemas 
@@ -167,7 +167,7 @@
 
                 
                 <div class="servico_info">
-                   <h1> Desenvolvimento de Software</h1>
+                <h2> Desenvolvimento de Software</h2>
                    <p>Desenvolvemos softwares personalizados que atendem 
                     precisamente aos requisitos exclusivos de cada cliente.
                     Isso inclui desde aplicações web até sistemas 
@@ -184,7 +184,7 @@
 
                 
                 <div class="servico_info">
-                   <h1> Desenvolvimento de Software</h1>
+                <h2> Desenvolvimento de Software</h2>
                    <p>Desenvolvemos softwares personalizados que atendem 
                     precisamente aos requisitos exclusivos de cada cliente.
                     Isso inclui desde aplicações web até sistemas 
@@ -214,8 +214,9 @@
 
 
     <!--membro-->
+    <section id="membro" >
 
-    <div class="membro reveal" id="membro">
+    <div class="membro reveal" >
         <h1><span>Membros da Empresa</span></h1>
 
         <div class="membro_box ">
@@ -430,15 +431,14 @@
 
     </div>
 
+</section>
 
-
-
-    <!--Order-->
+    <!--Contacto-->
     <section  id="contacto">
-    <div class="contacto">
+    <div class="contacto reveal">
         <h1><span>Contacto</span></h1>
 
-        <div class="contacto_main reveal">
+        <div class="contacto_main ">
 
             <div class="contacto-local">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31150.96523862915!2d13.39651215!3d-12.5907752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1bafd10adecd1033%3A0x9f62cf882e30a616!2sBenguela!5e0!3m2!1spt-PT!2sao!4v1696608885629!5m2!1spt-PT!2sao"  width="600" height="350" style="border:0; padding-left: 80px;" allowfullscreen="" loading="lazy"  referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -527,7 +527,7 @@
 
     </footer>
 
-        <script src="{{asset('assets/js/scroll.js')}}""></script>
+        <script src="{{asset('assets/js/scroll.js')}}"></script>
 
     
 </body>

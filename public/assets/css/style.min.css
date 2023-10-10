@@ -15,7 +15,7 @@ body{
 #btn{
     background: rgb(163,72,179);
     background: linear-gradient(90deg, rgba(163,72,179,1) 2%, rgba(75,160,191,1) 76%);
-    padding: 10px 20px;
+    padding: 6px 20px;
     color: #ffffff;
     border-radius: 14px;
     text-decoration: none;
@@ -31,10 +31,14 @@ body{
 .logo-p{
     font-size: 20px;
 }
-
-.logo-p p{
-    color: #e7ac18;
+h1 span{
+    font-size: 40px;
+    background-image: linear-gradient(to left, aqua, rgb(228, 51, 205) );
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
 }
+
 
 p{
     margin: 10px 0;
@@ -44,13 +48,12 @@ p{
     background-color: #0c435a;
 }
 
-section{
-    width: 100%;
-    height: 100vh;
-}
+
 
 #Home{
     background-color: #383C4E;
+      width: 100%;
+    height: 100vh;
 }
 
 section nav{
@@ -148,7 +151,7 @@ section .main .men_text h1 span{
 section p{
    text-align: center;
     text-align: justify;
-    margin: 15px 0;
+    margin: 5px 0;
     color: #737373;
 
 }
@@ -195,12 +198,14 @@ section .main_btn:hover i{
 
 
 /*About*/
-
+#About{
+   
+}
 .about{
     width: 100%;
-    height: 90vh;
-    padding: 70px 0 10px 0;
-    margin-top: 20px;
+    height: 610px;
+    padding: 20px 0 10px 0;
+
 
 }
 
@@ -227,9 +232,12 @@ section .main_btn:hover i{
 
 }
 .about .about_main .about_text h1 span{
-    color: #1A91C0;
     margin-right: 15px;
-    font-family: mv boli;
+    font-size: 40px;
+    background-image: linear-gradient(to left, aqua, rgb(228, 51, 205) );
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
 }
 
 .about .about_main .about_text h1{
@@ -263,51 +271,27 @@ section .main_btn:hover i{
 
 
 /*Servicos*/
+#servico{
 
+}
 .servico{
     width: 100%;
     padding: 70px 0 10px 0;
 
 }
 
-.servico h2{
-    font-size: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-   
-}
 
-.servico h1{
-    font-size: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-    background-color:#1A91C0;
+
+
+.servico h1 span{
     padding: 8px 0;
-    color: #FFFFF7;
-}
-
-
- h2 span{
-    color: #1A91C0;
-    margin-left: 15px;
-    font-size: 40px;
+    padding-left: 40px;
+   margin-top: -50px;
+   
     font-family: mv boli;
 }
 
-.servico h1 span::after{
-    content: '';
-    width: 100%;
-    height: 2px;
-    background: #1A91C0;
-    display: block;
-    position: relative;
-    bottom: 15px;
 
-}
 
 .servico .servico_box{
     width: 99%;
@@ -360,35 +344,30 @@ section .main_btn:hover i{
 /*fim servico*/
 
 /*Membros*/
+#membro{
 
+    width: 100%;
+    height: 1100px;
+}
 .membro{
     width: 100%;
     height: 100vh;
-    padding: 70px 0;
+    padding: 60px 0;
 }
 
 .membro h1{
-    font-size: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-bottom: -60px;
 }
-
 .membro h1 span{
-    margin-left: 15px;
-    color: #1A91C0;
+    padding: 0px 0;
+    padding-left: 40px;
+   margin-top: -50px;
+
+   
     font-family: mv boli;
 }
 
-.membro h1 span::after{
-    content: '';
-    width: 100%;
-    height: 2px;
-    background: #fac031;
-    position: relative;
-    bottom: 15px;
-    display: block;
-}
+
 
 .membro .membro_box{
     width: 95%;
@@ -480,13 +459,17 @@ section .main_btn:hover i{
     margin-top: 5px;
 }
 
+.membro h1 span{
+    margin-bottom: -50px;
+}
+
 
 
 /*Contacto*/
 #contacto{
     height: 90vh;
-    margin-top: 100px; 
-  
+    margin-top: -300px; 
+
 }
 .contacto {
 
@@ -504,16 +487,14 @@ section .main_btn:hover i{
 .contacto  h1{
     display: flex;
     align-items: center;
-    justify-content: center;
-    color: #000;
-    font-size: 30px;
+    justify-content:end;
+    margin-top: -40px;
 
 }
 
 .contacto  h1 span{
-    color: #1A91C0;
-    margin-right: 15px;
-    font-family: mv boli;
+    margin-right: 100px;
+  
     margin-bottom: 20px;
 }
 
@@ -521,7 +502,7 @@ section .main_btn:hover i{
     content: '';
     width: 100%;
     height: 2px;
-    background: #fac031;
+  
     display: block;
     position: relative;
     bottom: 15px;
@@ -802,4 +783,10 @@ footer .end span{
  .reveal.active{
     transform: translateY(0px);
     opacity: 1;
+ }
+
+
+ /*estilizando h1 */
+ .h1{
+    
  }
