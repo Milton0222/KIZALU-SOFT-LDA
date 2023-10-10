@@ -17,7 +17,7 @@
     
     </div>
    <a href="{{route('login')}}" target="_blank" rel="noopener noreferrer">
-   <button class="bg-blue-500 text-white py-2 px-4 rounded-md ">entrar</button>
+   <button class="bg-blue-500 text-white py-2 px-4 rounded-md ">Login</button>
    </a> 
     
 </body>
