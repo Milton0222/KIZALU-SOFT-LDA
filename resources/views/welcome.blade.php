@@ -387,20 +387,6 @@
 
             </div>
 
-
-
-    <div class="bg-slate-600 flex-row gap-4 grid-flow-row text-red-600 text-9xl ">
-        KIZALU SOFT,LDA
-       
-    <div class=" rounded-full bg-red-600 h-10 w-10 row-auto ">  </div>
-    <div class="rounded-full bg-green-600 h-10 w-10 "></div>
-    <div class="rounded-full bg-yellow-600 h-10 w-10"></div>
-
-
-    
-    
-
-
             <div class="membro_card">
 
                 <div class="membro_profile">
