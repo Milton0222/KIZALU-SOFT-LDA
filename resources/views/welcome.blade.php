@@ -14,7 +14,7 @@
 <section id="Home">
         <nav>
             <div class="logo">
-               <p class="logo-p">Kizalu <span>SOft-lda</span></p>
+               <p class="logo-p">KIZALU <span>SOFT-LDA</span></p>
             </div>
 
             <ul>
@@ -44,7 +44,7 @@
                 <h1>KIZALU<span></span>SOFT- LDA</h1>
            
             <p>
-            Prestação de soluções tecnologicas, consultorearia & mentorearia
+            soluções tecnologicas, consultória & mentorearia
         </p>
 
         <div class="main_btn">
@@ -535,13 +535,6 @@
     </footer>
 
         <script src="{{asset('assets/js/scroll.js')}}"></script>
-
-
-   <a href="{{route('login')}}" target="_blank" rel="noopener noreferrer">
-   <button class="bg-blue-500 text-white py-2 px-4 rounded-md ">Login</button>
-   </a> 
-
-    
     
 </body>
 </html>
