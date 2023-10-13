@@ -19,8 +19,8 @@ return new class extends Migration
             $table->double('preco_total')->default(0);
             $table->unsignedBigInteger('cliente');
             $table->unsignedBigInteger('servico');
-            $table->foreign('cliente')->references('users')->on('id')->onUpdate('Cascade');
-            $table->foreign('servico')->references('servicos')->on('id')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('cliente')->references('id')->on('users')->onUpdate('cascade');
+            $table->foreign('servico')->references('id')->on('servicos')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });
     }

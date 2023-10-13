@@ -16,9 +16,9 @@ return new class extends Migration
             $table->text('descricao');
             $table->string('arquivo');
             $table->unsignedBigInteger('servico');
-            $table->foreign('servico')->references('servicos')->on('id')->onDelete('cascade')->onUpdate('cascade');
+            $table->foreign('servico')->references('id')->on('servicos')->onDelete('cascade')->onUpdate('cascade');
             $table->unsignedBigInteger('usuario');
-            $table->foreign('usuarrio')->references('users')->on('id')->onUpdate('cascade');
+            $table->foreign('usuario')->references('id')->on('users')->onUpdate('cascade');
             $table->timestamps();
         });
     }
