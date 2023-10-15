@@ -28,9 +28,21 @@ body{
     background: linear-gradient(90deg, rgb(80, 40, 87) 2%, rgb(41, 87, 104) 76%);
 }
 
-.logo-p{
-    font-size: 20px;
+/*Estilizando a logo*/
+.div-logo{
+    height: 60px;
+    background-color: red;
 }
+
+.div-logo img{
+ width: 100px;
+ height: 60px;
+}
+
+
+/* fim */
+
+
 h1 span{
     font-size: 40px;
     background-image: linear-gradient(to left, aqua, rgb(228, 51, 205) );
@@ -55,7 +67,9 @@ p{
       width: 100%;
     height: 100vh;
 }
-
+section{
+   
+}
 section nav{
     display: flex;
     justify-content: space-around;
@@ -196,15 +210,83 @@ section .main_btn:hover i{
 }
 
 
+.grupo-imagens .img1,
+.grupo-imagens .img2
+,.grupo-imagens .img3,
+.grupo-imagens .img4{
+    width: 160px;
+    height: 170px;
+    position: absolute;
+    left: 100px;
+    top: 10px;
+}
+
+.grupo-imagens .img1{
+    left: 100px;
+    top: 10px;
+}
+.grupo-imagens .img2{
+    left: 1000px;
+    top: -90px;
+}
+
+
+
+
+
+  /* Defina a animação */
+  @keyframes fadeInOut {
+    0%, 100% {
+      opacity: 0;
+    }
+    25%, 75% {
+      opacity: 1;
+    }
+  }
+  
+  /* Aplica a animação a todas as imagens */
+  .grupo-imagens .img1 {
+    opacity: 0;
+    animation: fadeInOut 20s infinite; /* 5 segundos por imagem, 4 imagens */
+  }
+  
+  /* Define o atraso para cada imagem */
+  .img1 {
+    animation-delay: 0s;
+  }
+  
+ 
+  
+
+
+  
+.img2{
+    transform: translatey(0px);
+    animation: float 5s ease-in-out infinite;
+    }
+    
+    @keyframes float{
+    0%{
+        transform:translatey(0px);
+    }
+    
+    50% {
+    transform: translatey(-30px);
+    }
+    
+    100%{
+        transform:translatey(0px);
+    }
+}
 
 /*About*/
 #About{
-   
+  
 }
 .about{
     width: 100%;
     height: 610px;
-    padding: 20px 0 10px 0;
+    padding: 20px 0 0px 0;
 
 
 }
@@ -274,15 +356,24 @@ color: transparent;
 #servico{
 
 }
-.servico{
-    width: 100%;
-    padding: 70px 0 10px 0;
 
+
+.servico{
+    width: 98%;
+    padding: 0 0 10px 0;
+    margin: 0 20px;
+    transform: rotateY(25deg); /* Rotaciona a caixa em relação ao eixo Y */
+    transform-origin: 50% 50%; /* Define o ponto de origem da rotação como o centro da caixa */
+    transition: transform 0.5s ease; /* Adiciona uma transição suave para a animação */
+    border-radius: 17px;
+    background: #f7f7f7;
+    box-shadow:  5px 5px 25px #a9a9a9,
+   -5px -5px 25px #ffffff;
 }
 
-
-
-
+.servico:hover {
+    transform: rotateY(0deg); /* No hover, retorna a caixa à posição original */
+}
 .servico h1 span{
     padding: 8px 0;
     padding-left: 40px;
@@ -290,8 +381,6 @@ color: transparent;
    
     font-family: mv boli;
 }
-
-
 
 .servico .servico_box{
     width: 99%;
@@ -318,9 +407,10 @@ color: transparent;
     line-height: 21px;
 }
 
-.servico .servico_box .servico_card .servico_info h3{
+.servico .servico_box .servico_card .servico_info h2b{
     text-align: center;
     margin-top: 10px;
+    padding:  0 20px;
 }
 
 .servico .servico_box .servico_card .servico_info .servico_icon{
@@ -352,7 +442,7 @@ color: transparent;
 .membro{
     width: 100%;
     height: 100vh;
-    padding: 60px 0;
+    padding: 30px 0 30px 0;
 }
 
 .membro h1{
@@ -372,19 +462,22 @@ color: transparent;
 .membro .membro_box{
     width: 95%;
     height: auto;
-    margin: 70px auto;
+    margin: 50px auto;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+
 
 }
 
 .membro .membro_box .membro_card{
-    width: 340px;
-    height: 400px;
+    width: 220px;
+    height: auto;
     box-shadow: 0 2px 8px rgba(0,0,0,0.5);
     border-radius: 8px;
     padding: 8px 20px;
-    margin: 20px 8px;
+    margin: 20px 8px 0 8px;
+    
 }
 
 .membro .membro_box .membro_card .membro_profile{
@@ -402,8 +495,8 @@ color: transparent;
 }
 
 .membro .membro_box .membro_card .membro_profile img{
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     object-position: center;
     border-radius: 50%;
@@ -418,7 +511,8 @@ color: transparent;
 .membro .membro_box .membro_card .membro_text .name{
     color: #000;
     transition: 0.3s;
-    font-size: 18px;
+    font-size: 16px;
+    margin-top: 4px;
      
 }
 
@@ -429,7 +523,7 @@ color: transparent;
 .membro .membro_box .membro_card  .membro_text .membro_icon{
     color: #fac031;
     transition: 0.3s;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .membro .membro_box .membro_card:hover .membro_text .membro_icon{
@@ -438,7 +532,7 @@ color: transparent;
 
 .membro .membro_box .membro_card  .membro_text .membro_social i{
     margin: 5px 1px;
-    font-size: 15px;
+    font-size: 13px;
     opacity: 0;
     cursor: pointer;
     transition: 0.3s;
@@ -464,11 +558,25 @@ color: transparent;
 }
 
 
+.membro .membro_text a{
+  
+    text-decoration: none;
+   color: #ffffff;
+   font-weight: 1000;
+    border-radius: 10px;
+ margin: -20px 0 0 0;
+    color:#1A91C0;
+}
+
+.membro .membro_text a:hover{
+  color:#0f506a;
+}
+
 
 /*Contacto*/
 #contacto{
     height: 90vh;
-    margin-top: -300px; 
+    margin-top: -930px; 
 
 }
 .contacto {

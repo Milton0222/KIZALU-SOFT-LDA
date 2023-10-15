@@ -13,9 +13,9 @@
 <body>
 <section id="Home">
         <nav>
-            <div class="logo">
-               <p class="logo-p">KIZALU <span>SOFT-LDA</span></p>
-            </div>
+        <div class="div-logo">
+     <img src="{{asset('assets/image/logo.png')}}" alt="">        
+    </div>
 
             <ul>
                 <li><a href="#Home">Home</a></li>
@@ -39,6 +39,12 @@
         </nav>
 
         <div class="main">
+
+                  <div class="grupo-imagens">
+                  <img class="img1" src="{{asset('assets/image/segundo.png')}}" alt="">  
+                  <img class="img2" src="{{asset('assets/image/primeira.png')}}" alt="">  
+               
+                  </div>
 
             <div class="men_text">
                 <h1>KIZALU<span></span>SOFT- LDA</h1>
@@ -243,13 +249,9 @@
                         <i class="fa-brands fa-linkedin-in"></i>
                     </div>
                     <h3>Desenvolvedor Full</h3>
-                    <p class="bio"> Licenciado em Ciencias da Computação.</p>
-                    <p><strong>Universidade:</strong> Katiavala Bwila</p>
-                    <p><strong>Faculdade:</strong> Instituto Politecnico</p>
-                    <p>
-
+                    <p class="bio"> Licenciado em Ciencias da Computação.</p> 
+                    <a href="">detalhe</a>
                 </div>
-
             </div>
 
             <div class="membro_card">
@@ -276,13 +278,9 @@
                         <i class="fa-brands fa-linkedin-in"></i>
                     </div>
                     <h3>Desenvolvedor front-End</h3>
-                    <p class="bio"> Licenciado em Ciencias da Computação.</p>
-                    <p><strong>Universidade:</strong> Katiavala Bwila</p>
-                    <p><strong>Faculdade:</strong> Instituto Politecnico</p>
-                    <p>
-                 
-
-                </div>
+                    <p class="bio"> Licenciado em Ciencias da Computação.</p> 
+                    <a href="">detalhe</a>
+                                </div>
 
             </div>
 
@@ -311,10 +309,10 @@
                     </div>
 
                     <h3>Desenvolvedor front-End</h3>
-                    <p class="bio"> Licenciado em Ciencias da Computação.</p>
-                    <p><strong>Universidade:</strong> Katiavala Bwila</p>
-                    <p><strong>Faculdade:</strong> Instituto Politecnico</p>
-                    <p>
+                    <p class="bio"> Licenciado em Ciencias da Computação.</p> 
+                    <a href="">detalhe</a>
+                    
+                   
 
                 </div>
 
@@ -344,10 +342,9 @@
                         <i class="fa-brands fa-linkedin-in"></i>
                     </div>
                     <h3>Desenvolvedor Desktop</h3>
-                    <p class="bio"> Licenciado em Ciencias da Computação.</p>
-                    <p><strong>Universidade:</strong> Katiavala Bwila</p>
-                    <p><strong>Faculdade:</strong> Instituto Politecnico</p>
-                    <p>
+                    <p class="bio"> Licenciado em Ciencias da Computação.</p> 
+                    <a href="">detalhe</a>
+                  
 
                 </div>
 
@@ -378,10 +375,8 @@
                         <i class="fa-brands fa-linkedin-in"></i>
                     </div>
                     <h3>Desenvolvedor Full Stack</h3>
-                    <p class="bio"> Licenciado em Ciencias da Computação.</p>
-                    <p><strong>Universidade:</strong> Katiavala Bwila</p>
-                    <p><strong>Faculdade:</strong> Instituto Politecnico</p>
-                    <p>
+                    <p class="bio"> Licenciado em Ciencias da Computação.</p> 
+                    <a href="">detalhe</a>
 
                 </div>
 
@@ -411,9 +406,8 @@
                         <i class="fa-brands fa-linkedin-in"></i>
                     </div>
                     <h3>Desenvolvedor Full Stack</h3>
-                    <p class="bio"> Licenciado em Ciencias da Computação.</p>
-                    <p><strong>Universidade:</strong> Katiavala Bwila</p>
-                    <p><strong>Faculdade:</strong> Instituto Politecnico</p>
+                    <p class="bio"> Licenciado em Ciencias da Computação.</p> 
+                    <a href="">detalhe</a>
                     <p>
 
                 </div>

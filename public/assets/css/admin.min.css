@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2? family= Inter:wght@100;200;300;400;500;600 & family= Roboto:ital,wght@0,100;0,300; 0.400;0.700;1.100;1.700 & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Inter:wght@100;200;300;400;500;600 & family= Lora:ital,wght@0,400;0,500; 0,600; 0,700; 1.400; 1.500; 1.600; 1.700 & Family = Playfair+Display: Ital, wght@0.400; 0,600; 0,800; 1.500; 1.800 & Family = Roboto: Ital, Wght@0,100; 1.700 & família= Young+Serif & display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    
+
+}
+
+.img-funcio{
+    width: 80px;
+    height: 40px;
+    object-fit: cover;
+    transition: all 0.7 ease;
+}
+
+
+h3{color: #7d612b;}
+
+.menu-lateral{
+    width: 20%;
+    height: 100%;
+    background-color:#161616;
+  
+background: #FFFFFF;
+box-shadow:  20px 20px 60px #dbdbdb,
+             -20px -20px 60px #ffffff;
+
+}
+
+/*Estilizando a logo*/
+.div-logo{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-logo a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+}
+
+.div-logo a p{
+    margin-top: -20px;
+}
+.menu-lateral .logo{
+ text-decoration: none;
+ font-size: 50px;
+ font-weight: 1000;
+ background-image: linear-gradient(to left, aqua, rgb(228, 51, 205) );
+ background-clip: text;
+ -webkit-background-clip: text;
+ color: transparent;
+}
+
+
+/* Estilizando Menu */
+
+.menu-lateral .menu li {
+    list-style: none;
+   
+    
+}
+
+.menu-lateral .menu li .a{
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.menu-lateral .menu li .a:focus{
+background-color: #f1f7fa;
+border-radius: 14px;
+}
+
+.menu-lateral .menu li .a i{
+    color: #5f4c2d;
+}
+.menu-lateral .menu li .a span{
+    margin-left: 10px;
+    color: #000;
+}
+
+.menu-lateral .menu li .a span:hover{
+color: #CDA45E;
+}
+
+
+
+
+
+/* Estilos para o submenu */
+.submenu{
+    display: none;
+   text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+ 
+  }
+  
+  .submenu li {
+    margin-left: 10px; /* Espaço para indentação das opções do submenu */
+   padding:0 0px  0 2px;
+
+  }
+  
+
+  .submenu a{
+    text-decoration: none;
+    color: #000;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 14px;
+  
+  }
+
+  .submenu a:hover{
+   color: #CDA45E;
+  }
+  
+  /* Estilos para o submenu quando estiver visível */
+  .submenu.visible {
+    display: block;
+  }
+/*user-container*/
+
+.user-container{
+    position: fixed;
+    margin-top: 330px;
+    background-color:#c6c5c5;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    color: #a4a4a4;
+}
+
+.user-info img {
+    background-color: #c49331;
+   
+}
+
+/*segunda parte*/
+
+.container-principal{
+    width: 100%;
+    height: 59vh;
+    
+
+}
+
+.container-principal .perfil{
+    display: flex;
+    width: 100%;
+    height: 50px;
+
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+ .perfil .nome{
+ 
+    padding: 4px 8px;
+    margin-top: 20px;
+    border-radius: 4px;
+    margin-right: 14px;
+    color: rgb(69, 68, 68);
+    font-weight: 100;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+
+ }
+
+ .perfil #nome{
+    position: relative;
+  
+ }
+ .perfil .pesquisar:focus{
+    outline: none;
+ }
+
+/*home*/
+.container-home{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+  
+
+}
+
+.container-home .container{
+   flex-wrap: wrap;
+    display: flex;
+    padding: 30px 10px;
+    border-radius: 14px;
+ 
+    max-width:100%;
+    justify-content: center;
+
+
+}
+
+.container .user,
+.container .riquisitados,
+.container .servicos
+{
+    width: 180px;
+    margin:  10px;
+    height: 100px;
+padding-right: 10px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+border-radius: 4px;
+background-color: #236995;
+
+
+}
+ strong{
+font-size: 20px;
+color: #cbcbcb;
+position: relative;
+   top: 3px;
+}
+
+.container-home p{
+    font-size: 16px;
+
+    color: #c8c5c5;
+}
+.container i,
+.ver{
+
+    text-decoration: none;
+    color: #CDA45E;
+    padding-left: 30%;
+    font-size: 24px;
+  padding-bottom: 10px;
+  transition:ease 0.3s;
+} 
+
+.container a i:hover,
+.ver:hover{
+    color: #413c38;
+    position: relative;
+    top:-4px ;
+    transition: 0.3s;
+}
+
+
+
+
+
+
+/*  Lista User*/
+
+.lista-user{
+
+display: flex;
+justify-content: center;
+
+margin-top: 4px;
+}
+
+.lista-user .container{
+border-collapse: collapse;
+margin: 25px 0;
+margin-top: 20px;
+font-size: 16px;
+
+
+}
+
+
+main{
+    height: 100hv;
+    margin-bottom: 40px;
+    background-color:transparent;
+    padding: 0 30px;
+}
+main h1{
+    text-align: center;
+    margin-top: 45px;
+    color: #5e5037;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.main-cardapio{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-cardapio li{
+    list-style: none;
+}
+.main-cardapio li a{
+text-decoration: none;
+font-size: 14px;
+color: #CDA45E;
+margin: 0 8px;
+padding: 5px;
+font-weight: 800;
+
+}
+
+.main-cardapio li a:hover{
+    color: #91702d;
+
+}
+
+/*footer*/
+.rodape-ajuda,
+.rodape{
+  height: 50px;
+  position: fixed;
+  top: 93.5%;
+width: 100%;
+
+background: rgb(21, 38, 69);
+  opacity: 1;
+}
+
+.rodape-ajuda{
+  
+    background: rgb(1, 14, 38);
+}
+.rodape-ajuda a{
+    color: #ffffff;
+   text-decoration: none;
+
+}
+
+.rodape-ajuda a p{
+position: relative;
+top: 30%;
+left: 4%;
+}
+/*fim footer*/
+
+/*Cadastrar */
+.cadastrar{
+    display: flex;
+   
+    margin: 39px;
+}
+
+.cadastrar-user,
+.cadastrar-servicos{
+    width: 50%;
+    padding: 10px;
+
+}
+
+.cadastrar-user h2,
+.cadastrar-servicos h2{
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+
+.cadastrar-user input,
+.cadastrar-servicos input{
+    width: 100%;
+    padding: 12px 4px;
+    border-radius: 9px;
+    margin-bottom: 12px;
+    outline: none;
+    border: none;
+    border: 1px solid rgba(204, 23, 23, 0.818);
+}
+
+
+/* Estilos para a modal */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(2, 2, 2, 0.7); /* Cor de fundo castanho com transparência */
+    z-index: 1;
+}
+
+
+/* Estilos para o formulário dentro da modal */
+
+
+
+
+
+button:hover{
+    background-color: #6c5835;
+}
+/* Estilos para a lista de bebidas */
+#bebidas-list {
+    margin: 20px;
+}
+
+
+.success-message {
+    display: none;
+    color: green;
+    font-weight: bold;
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+
+
+
+
+
+
+.comidaModal h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+  form {
+    width: 100%;
+    margin: 0 auto;
+   background-color: transparent;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+ label {
+    display: block;
+    margin-top: 7px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #6b6a6a;
+}
+input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    color: #a8a8a8;
+    border:  1px solid #c49331;
+    height: 45px;
+}
+input:focus{
+    border: 1px solid #fff ;
+}
+
+textarea{
+    border:  1px solid #c49331;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+}
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.betn{
+    padding: 10px 40px;
+    border-radius: 50px;
+color: #Ffffff;
+background-color: #be6a32;
+    position: relative;
+    left: 250px;
+    margin-top: 17px;
+  border: none;
+    cursor: pointer;
+    font: 14px;
+
+}
+
+#paginacao{
+    top: -70px;
+}
