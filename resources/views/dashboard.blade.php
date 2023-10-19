@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!--CSS-->
     <link rel="stylesheet" href="admin.css">
@@ -22,7 +22,7 @@
 <body>
   <div class="menu-lateral">
     <div class="div-logo">
-        <a href=""><span  class="logo">KS</span> 
+        <a href="{{route('kizalu')}}"><span  class="logo">KS</span> 
                  <p>KIZALU SOFT LDA</p>
        </a>
         
@@ -57,13 +57,13 @@
                            </ul>
                         </li>
                         <li>
-                          <a  class="a" href="reserva.html">
+                          <a  class="a" href="#">
                             <i class="fa-solid fa-desktop"></i>
                             <span>Serviços</span>
                           </a>
                         </li>
                         <li>
-                          <a class="a" href="contacto.html">
+                          <a class="a" href="#">
                             <i class="fa-solid fa-address-book"></i>
                             <span>Sobre</span>
                           </a>
@@ -71,7 +71,7 @@
 
                         
                         <li>
-                            <a class="a" href="contacto.html">
+                            <a class="a" href="#">
                               <i class="fa-solid fa-address-book"></i>
                               <span>Definicoes</span>
                             </a>
@@ -134,16 +134,7 @@
                                                             <a href="list_mesas.html"> <i class="fa-solid fa-table"></i>  </a>
                                                            
                                                         </div>
-
-                                                       
-
-                                                   
-
-                                             
-
-                                                        
-
-                                     
+     
                                     </div>
 
                                
