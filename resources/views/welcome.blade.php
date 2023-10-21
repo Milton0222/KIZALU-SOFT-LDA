@@ -49,12 +49,12 @@
             <div class="men_text">
                 <h1>KIZALU<span></span>SOFT- LDA</h1>
            
-            <p>
+            <p style="text-align: center;">
             soluções tecnologicas, consultória & mentorearia
         </p>
 
         <div class="main_btn">
-            <a href="#">Serviços</a>
+            <a href="{{route('register')}}">Começar </a>
             <i class="fa-solid fa-angle-right"></i>
         </div>
      </div>
