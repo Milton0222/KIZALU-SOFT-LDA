@@ -384,9 +384,10 @@ color: transparent;
 
 .servico .servico_box{
     width: 99%;
-    margin: 0 auto;
+    margin: 0 20px;
     display: flex;
     flex-wrap:wrap ;
+    justify-content: center;
   
 }
 
@@ -437,16 +438,19 @@ color: transparent;
 #membro{
 
     width: 100%;
-    height: 1100px;
+    height: auto;
+   
 }
 .membro{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     padding: 30px 0 30px 0;
+    background-color: transparent;
 }
 
 .membro h1{
-    margin-bottom: -60px;
+    margin-bottom: 0px;
+    text-align: center;
 }
 .membro h1 span{
     padding: 0px 0;
@@ -457,17 +461,14 @@ color: transparent;
     font-family: mv boli;
 }
 
-
-
 .membro .membro_box{
-    width: 95%;
+    width: 100%;
     height: auto;
-    margin: 50px auto;
+    margin: 0px auto;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-
-
+   
 }
 
 .membro .membro_box .membro_card{
@@ -573,22 +574,26 @@ color: transparent;
 }
 
 
+
+
 /*Contacto*/
 #contacto{
-    height: 90vh;
-    margin-top: -930px; 
+    height: 98vh;
+    margin-top: -320px; 
+    
 
 }
 .contacto {
 
     width: 100%;
-    height: 600px; 
+    height: 95%; 
        border-radius: 0px;
     background: #f7f7f7;
     box-shadow:  5px 5px 25px #a9a9a9,
    -5px -5px 25px #ffffff;
     margin: 350px 0 0 0;
     padding-top: 80px;
+
 
               }
 
@@ -599,10 +604,9 @@ color: transparent;
     margin-top: -40px;
 
 }
-
 .contacto  h1 span{
     margin-right: 100px;
-  
+  margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -610,7 +614,6 @@ color: transparent;
     content: '';
     width: 100%;
     height: 2px;
-  
     display: block;
     position: relative;
     bottom: 15px;
@@ -618,7 +621,6 @@ color: transparent;
 
 .contacto .contacto_main{
     display: flex;
-
     justify-content: space-around;
     height: 100%;
 }
@@ -626,17 +628,18 @@ color: transparent;
 .contacto  .contacto-local{
     width: 50%;
 
-    height: 100%;
+    height:90% ;
     margin: 0 0 0 40px;
 }
 .contacto .contacto-form{
 
     width: 50%;
-
+    height: 90%;
     margin: 0 40px 0 0px;
 }
 .contacto .contacto-form .grupo{
 display: flex;
+
 
 }
 
@@ -668,7 +671,7 @@ display: flex;
 
 }
 
-.contacto .contacto-form  textarea,
+
 .contacto .contacto-form   input,
 .contacto .contacto-form  .grupo input{
     border: none;
@@ -678,131 +681,24 @@ display: flex;
     border-radius: 6px;
 }
 
+.contacto .contacto-form  textarea{
+    margin-bottom: 20px;
+}
+
 .contacto_btn{
     text-decoration: none;
     background:rgba(163, 72, 179, 1) ;
     background: linear-gradient(90deg, rgba(163, 72, 179, 1) 2%, rgba(75, 160, 191, 1) 76%);
     color: #ffffff;
-    padding: 10px 20px;
+    padding: 10px 40px;
     border-radius: 10px;
-    margin: 30px;
     position: relative;
-    top: 25px;
- 
-}
-/*Team*/
-
-.team{
-    width: 100%;
-    height: 90vh;
-        background-size: cover;
-    background-position: center;
+    left: 30%;
 }
 
-
-.team h1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 55px;
-    margin-bottom: 30px;
-}
-
-.team h1 span{
-    color: #fac031;
-    margin-left: 15px;
-    font-family: mv boli;
-}
-
-.team h1 span::after{
-    content: '';
-    width: 100%;
-    height: 2px;
-    background: #fac031;
-    display: block;
-    position: relative;
-    bottom: 15px;
-}
-
-.team .team_box{
-    width: 80%;
-    margin:0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-flex-wrap: wrap;
-    position: relative;
-    top: 13%;
-    
-
-}
-
-.team .team_box .profile{
-    width: 260px;
-    height: 320px;
-    border-radius: 20px;
-    margin: 20px 15px;
-    display: flex;
-      justify-content: center;
-    position: relative;
-    box-shadow: 0 0 8px rgba(0,0,0,0.5);
-    transition: 0.4s;
-}
-
-.team .team_box .profile:hover{
-    border-radius: 20px;
-   
-}
-
-.team .team_box .profile img{
-    width: 250px;
-    height: 170px;
-    object-fit: cover;
-    object-position:top;
-    border-radius: 20px;
-    cursor: pointer;
-    box-shadow: 0 0 8px rgba(0,0,0,0.5);
-    z-index: 2;
-    transition: 0.4s;
-
-    margin-top: 5px ;
-}
-
-.team .team_box .profile:hover img{
-    border-radius: 20px;
-    margin-top: -50px;
-}
-
-.team .team_box .profile .info{
-    position: absolute;
-    text-align: center;
-    top: 60%;
-    transition: 0.4s;
-}
-
-.team .team_box .profile:hover .info{
-    top: 56%;
-}
-
-.team .team_box .profile .info .name{
-    color: #fac031;
-    margin-bottom: 10px;
-}
-
-.team .team_box .profile .info .bio{
-    width: 70%;
-    text-align: center;
-    margin: 0 auto 10px auto;
-}
-
-.team .team_box .profile .info .team_icon i{
-    margin: 7px 5px 5px 0;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.team .team_box .profile .info .team_icon i:hover{
-    color: #fac031;
+.contacto_btn:hover{
+    background:rgb(128, 61, 141) ;
+    background: linear-gradient(90deg, rgb(123, 67, 134) 2%, rgb(69, 126, 146) 76%);
 }
 
 
@@ -845,17 +741,9 @@ footer .footer_main .footer_tag i:hover{
 
 }
 
-footer .end{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15px;
-}
 
-footer .end span{
-    color: #1A91C0;
-    margin-left: 10px;
-}
+
+
 
 ::-webkit-scrollbar{
     width: 13px;
@@ -871,14 +759,28 @@ footer .end span{
     border-radius: 15px;
 }
 
-.end{
+
+
+/*segundo footer */ 
+.endd p{
+    color: #f2fbff;
+}
+.endd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+.endd{
     background-color: #000;
-    opacity: 0.8;
+      opacity: 0.8;
     font-size: 18px;
-    
 }
 
-
+ .endd span{
+    color: #1A91C0;
+    margin-left: 10px;
+}
 /*Animacoes com scroll*/
 .reveal{
     position: relative;
@@ -894,7 +796,7 @@ footer .end span{
  }
 
 
- /*estilizando h1 */
- .h1{
-    
- }
+/* midea query*/
+@media only screen and (max-width: 768px){
+
+}

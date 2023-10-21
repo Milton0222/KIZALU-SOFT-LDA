@@ -30,11 +30,9 @@ h3{color: #7d612b;}
     width: 20%;
     height: 100%;
     background-color:#161616;
-  
-background: #FFFFFF;
+  background: #FFFFFF;
 box-shadow:  20px 20px 60px #dbdbdb,
              -20px -20px 60px #ffffff;
-
 }
 
 /*Estilizando a logo*/
@@ -43,6 +41,7 @@ box-shadow:  20px 20px 60px #dbdbdb,
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .div-logo a{
@@ -51,6 +50,11 @@ box-shadow:  20px 20px 60px #dbdbdb,
     align-items: center;
     flex-direction: column;
     text-decoration: none;
+    border-radius: px;
+   padding: 0 4px;
+    
+ 
+    
 }
 
 .div-logo a p{
@@ -503,4 +507,17 @@ background-color: #be6a32;
 
 #paginacao{
     top: -70px;
+}
+
+
+/*grafico-canva*/
+.grafico{
+
+    display: flex;
+    justify-content: center;
+}
+
+.grafico-canva{
+    width: 900px;
+    height: 400px;
 }

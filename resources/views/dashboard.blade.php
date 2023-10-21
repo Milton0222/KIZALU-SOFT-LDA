@@ -8,7 +8,7 @@
     <!--CSS-->
     <link rel="stylesheet" href="admin.css">
     <link href="{{asset('assets/css/admin.min.css')}}" rel="stylesheet">
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
      <!-- Fonts -->
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -90,10 +90,10 @@
     </div>
 
         
-    <div class="container-principal">
+    <div class="container-principal" >
     @livewire('navigation-menu')
 
-                        <main>
+                        <main >
                             <div class="container-home">
                                 <div class="container">
                                     
@@ -149,9 +149,16 @@
                                
 
 
-                            </div>
+                            </div>    
+                            <div class="grafico">  
+                              <div class="grafico-canva">
+            <canvas id="myChart"></canvas>
+              </div></div> 
                          
                         </main> 
+               
+      
+
                      <!--  Rodape -->
                      <footer class="rodape">
 
@@ -161,5 +168,6 @@
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
  
         <script src="{{asset('assets/js/script.js')}}"></script>
+        <script src="{{asset('assets/js/acquisitions.js')}}"></script>
 </body>
 </html>

@@ -222,7 +222,7 @@
     <section id="membro" >
 
     <div class="membro reveal" >
-        <h1><span>Membros da Empresa</span></h1>
+        <h1><span>Equipa</span></h1>
 
         <div class="membro_box ">
             <div class="membro_card">
@@ -451,7 +451,7 @@
                     <textarea name="" id="" cols="30" rows="10" placeholder="Mensagem"></textarea>
                     
                 </div>
-                <a href="#" id="btn" class="contacto_btn ">Enviar</a>
+                <a href="#"  class="contacto_btn ">Enviar</a>
 
             </form>
         </div>
@@ -510,10 +510,13 @@
 
         </div>
          
-        <p class="end" style="color: #d0d0d0; font-weight: 500;">Kizalu<span><i class="fa-solid fa-face-grin"></i> SOFT-LDA</span></p>
+       
 
     </footer>
-
+    <footer class="endd">
+       <p>Kizalu<span><i class="fa-solid fa-face-grin"></i> SOFT-LDA</span></p>
+    </footer>
+ 
         <script src="{{asset('assets/js/scroll.js')}}"></script>
     
 </body>
